@@ -122,6 +122,26 @@ Greppable problems. These are mostly mechanical and easy to fix:
   → What's Next" is fine once. Used as a default it becomes a template.
   Vary it. The Synergy post's structure is better — it's organized by
   the actual investigation.
+- **Button-ending density.** The dry one-liner at the end of a beat is a
+  Yes-list move and stays there. What fails is doing it in *every*
+  paragraph: each one makes its point, then adds a closing flourish, and
+  the post becomes a queue of quotable lines. No single sentence looks
+  wrong, which is why the other checks pass it. The relentlessness is the
+  tell — a person gets bored of their own cleverness and just says the
+  next thing.
+
+  A 2026-09 draft ran twelve of these in 1250 words: "a problem that was
+  not about Chrome," "the last twenty minutes of my life," "Different
+  application," "That's the whole fix," "The error is a lie," "a
+  permission denial wearing a routing error's clothes." Cutting them took
+  out 200 words and nothing else.
+
+  Test: read only the last sentence of each paragraph, in order. If they
+  read as a list of aphorisms, cut most of them. Target roughly one
+  button per three or four paragraphs, and let the rest end flat on the
+  fact. Ending flat is not a failure to land the point — it *is* the
+  point, and the reader is not owed a payoff for every paragraph they
+  finish.
 - **The flagged words.** *"shape"* and *"load-bearing."* Greppable.
   Should be zero per post unless literally describing something's shape
   or load-bearing capacity. One earlier post leans on both heavily.
@@ -242,6 +262,11 @@ structure, and the two personal flagged words.
 - [ ] **Paragraph-length variance.** Skim the post's right edge. If
   every paragraph is the same visual block, break some up or fuse
   others.
+- [ ] **Last-sentence-of-each-paragraph read.** Read them in order,
+  skipping everything else. A run of aphorisms means button-ending
+  density; cut down to roughly one per three or four paragraphs. This is
+  the check that a clean `personify` run and a clean grep will both miss,
+  because every individual sentence is fine.
 - [ ] **First three paragraphs contain at least one McKenzie-grade
   specific** (number, version, dollar, named tool).
 - [ ] **Last sentence is doing work or is the earned dry close.** Not
