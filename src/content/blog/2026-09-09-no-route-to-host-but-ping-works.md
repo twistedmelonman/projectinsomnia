@@ -5,7 +5,7 @@ description: "SSH to every host on my LAN failed with No route to host, while pi
 tags: ["tech", "macos", "networking", "ssh", "tcc", "homebrew"]
 ---
 
-On September 4th Chrome stopped loading pages. I quit it, reopened it, everything worked, and I filed a bug against my dotfiles saying "Homebrew's Chrome cask update breaks running Chrome." Then I closed the tab.
+On September 4th Chrome stopped loading pages. I quit it, reopened it, everything worked, and I wrote myself an issue in my dotfiles repo: "Homebrew's Chrome cask update breaks running Chrome." Then I closed the tab.
 
 Five days later I couldn't `ssh` to anything on my own network.
 
@@ -39,6 +39,10 @@ The same `ssh` from Terminal.app: works. Same key, same config, same host, same 
 
 A freshly launched iTerm2: also works.
 
+Somewhere in here I gave up for a few minutes and opened Instagram in Chrome, and Chrome couldn't load it either. Same Chrome that had done this to me five days earlier, and the same window I'd had open since before that morning's upgrade ran.
+
+That's what connected them, and it wasn't deduction. Two applications failing to reach the network on the same morning, one of which I'd already written myself a note about.
+
 What kept me pointed the wrong way longest was Finder, which held its SMB mounts the entire time. Apple's own applications are exempt from Local Network gating, so Finder was never subject to any of this, and it sat there reading files off the same host I couldn't open a socket to. Hard to argue your network is broken when the Finder window is right there.
 
 ## What's actually going on
@@ -53,9 +57,9 @@ What I can state as fact: the TCC grant is intact, the toggle has no effect on t
 
 It's worth separating this from the Homebrew permission problem people usually hit, where a managed binary moves to a new path and TCC orphans the grant because the path no longer matches. Here the bundle identity and code signature are unchanged and the grant is intact. What broke is the binding between that grant and the process that was already running when the bundle got swapped.
 
-## Back to Chrome
+## What I got wrong on September 4th
 
-So: September 4th. Chrome lost network access after a cask upgrade, quitting and reopening fixed it, and I wrote that down as a fact about Chrome. Chrome ships its own updater, I reasoned, so exclude it from the bulk upgrade and let it handle itself.
+Back on the 4th, Chrome lost network access after a cask upgrade, quitting and reopening fixed it, and I wrote that down as a fact about Chrome. Chrome ships its own updater, I reasoned, so exclude it from the bulk upgrade and let it handle itself.
 
 Which is a fine fix for Chrome and does nothing about the actual problem, which is that `brew upgrade --cask` replaces bundles in place and any running application that touches the network is a candidate. Chrome's symptom was loud and generic — pages don't load — so it read as a browser problem. iTerm2's was quiet and specific enough to send me looking at my router.
 
