@@ -30,6 +30,13 @@ master, which treats both as deliberate moves rather than tells:
 If something here contradicts the master, the master is right and this
 sheet needs an edit.
 
+**One standing exception: headlines.** The master's item 10 prescribes a
+two-sentence claim-then-turn title. The author rejected that style on
+2026-09-10 and asked for single-line NYT-style headlines instead. Until
+item 10 is corrected at the source, the Headlines section below wins
+over it. This is a later instruction from the same author, not the
+overlay outranking the master.
+
 ## Where the voice actually is
 
 The bones are fine. Lines like *"I am a person with too many computers.
@@ -43,8 +50,7 @@ structural habits that pull the rhythm toward the generic AI-essay
 register:
 
 1. Bold lead-ins on numbered lists (`**Thing.** Sentence about thing.`)
-2. Two-sentence headlines whose second sentence continues the first
-   rather than turning on it
+2. Two-sentence headlines, in any form — claim-then-turn included
 3. Italicized parallelism for emphasis (*what happened* / *the full story*)
 4. Stock end-of-post section sequence: "Hard Problems → What I'd Do
    Differently → What's Next"
@@ -105,10 +111,10 @@ Greppable problems. These are mostly mechanical and easy to fix:
   the pattern, it is the absence of any other pattern: every list in a
   post built the same way. Vary it, and convert to prose or a
   sentence-led list where the label is not earning anything.
-- **Headlines with no turn.** The two-sentence claim-then-turn title is
-  the master's item 10 and this sheet's own house pattern, so it is not
-  on this list. What fails is the version where the second sentence only
-  continues the first instead of darkening it. See Headlines below.
+- **Two-sentence headlines.** Any title built as claim-then-turn, or as
+  two sentences at all. This was the house pattern until 2026-09-10 and
+  is now out entirely, turn or no turn. Titles are one line. See
+  Headlines below.
 - **Italicized parallelism.** *"Pageout data tells you what happened.
   Notification data tells you the full story."* Cut the italics. Better,
   cut the parallelism — it's a triadic rhythm move and you don't need it.
@@ -212,31 +218,59 @@ symptom is X, the fix is Y, here's why" block, *then* the war story.
 
 ## Headlines
 
-Three patterns work for your voice:
+**Write the title like a New York Times article headline.** One line. No
+terminal period. It says what the piece is about, in a way that draws
+interest without sounding excited about itself. The reader should be able
+to name the subject from the title alone, before reading a word of the
+post.
 
-- **Specific weird detail.** "The Mac Mini Has a Thunderbolt Port. The
-  Simulator Doesn't Know That." This one's already yours. The mismatch
-  between two technically true facts.
-- **Confession framed as service.** "The Synergy Multi-Monitor Rabbit
-  Hole I Fell Into So You Don't Have To." Old-school web-blog title;
-  works.
-- **Keyword-stuffed how-to.** "Unlocking the Login Keychain Over SSH on
-  a Headless Mac." Fine for SEO posts. Don't dress it up.
+That is the whole rule. It replaces the two-sentence claim-then-turn
+formula that this sheet and the master voice guide both prescribed until
+2026-09-10, when the author ruled it out by name. See History below —
+the sheet has flipped on this before, and the current direction is the
+one to keep.
 
-All three are two-sentence titles: a declarative claim, then a hard turn
-that darkens or undercuts it. That is the master's item 10, and it is the
-formula rather than a tell. This sheet used to say the opposite, naming
-"I Solo-Built a Production Observability Platform. Then I Got Laid Off by
-Email." as a LinkedIn tic to drop, which contradicted the master citing
-that exact headline as the pattern. The master wins; the ban is gone.
+Titles already on the blog that meet the rule:
 
-The turn is what does the work, so watch the connective rather than the
-structure. A literal **"X. Then Y."** built on a bare *Then* is the weak
-form of the move, because sequence is not a reversal: the second sentence
-has to darken, undercut, or contradict the first. "The Mac Mini Has a
-Thunderbolt Port. The Simulator Doesn't Know That." earns it on the
-mismatch between two true facts. Rewrite for a sharper turn, never to
-flatten the title back to one clause.
+- "Unlocking the Login Keychain Over SSH on a Headless Mac" — the SEO
+  how-to case. Keyword-carrying and undressed. This is the model for
+  technical posts.
+- "An Incomplete List of Everything 'Reset All Settings' Actually Resets"
+  — interest comes from the specific, slightly absurd subject, not from
+  a rhetorical move.
+- "Hallway" and "Five Races" — the essay case. A short noun phrase
+  earns the reader's attention when the piece is personal.
+
+Not this:
+
+- **Two sentences.** "The Mac Mini Has a Thunderbolt Port. The Simulator
+  Doesn't Know That." would run as "The Simulator Can't See the Mac
+  Mini's Thunderbolt Port." The mismatch between two true facts is still
+  the story; it belongs in the lede, not the title.
+- **Claim-then-turn.** "I Solo-Built a Production Observability
+  Platform. Then I Got Laid Off by Email." Out on the same grounds. So
+  is any bare **"X. Then Y."**
+- **Chummy web-blog framing.** "The Synergy Multi-Monitor Rabbit Hole I
+  Fell Into So You Don't Have To." One line, but it performs. The
+  subject is multi-monitor setup with Synergy; say that.
+- **Overexcitement.** Exclamation points, all-caps, "You Won't Believe,"
+  listicle counts used as bait, and questions as titles.
+
+Rewrite toward a title that states the subject plainly. Never rewrite by
+gluing a second sentence back on.
+
+### History
+
+This sheet has reversed on headlines twice. It first banned the
+two-sentence title, then restored it because the master voice guide's
+item 10 named that exact formula and the master wins on conflict. On
+2026-09-10 the author rejected the two-sentence style directly and asked
+for the NYT single-line rule, which supersedes item 10 at the source
+rather than through the overlay. A future session finding item 10 still
+in the master should treat this section as current and fix the master,
+not revert this.
+
+Auditing and retitling the existing posts is tracked separately.
 
 ## Voice check (run before publishing)
 
@@ -255,8 +289,10 @@ structure, and the two personal flagged words.
 - [ ] **Numbered lists scanned**: are all of them `\d\. \*\*[^*]+\.\*\*`?
   One or two is fine and often better. Every list in the post built that
   way is the tell.
-- [ ] **Headline read aloud.** Does it sound like a LinkedIn post? If
-  so, reframe.
+- [ ] **Headline is one NYT-style line.** One sentence or noun phrase,
+  no terminal period, no second sentence, no question mark, no
+  exclamation point. A stranger can name the subject from the title
+  alone. Nothing in it is trying to sound excited.
 - [ ] **Italics audit.** Italics for *emphasis-by-parallelism* — cut.
   Italics for technical terms, foreign words, or actual emphasis — keep.
 - [ ] **Paragraph-length variance.** Skim the post's right edge. If
