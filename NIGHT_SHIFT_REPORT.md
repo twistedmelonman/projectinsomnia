@@ -1,4 +1,5 @@
 # 🦉 Night Shift Report — 20260415
+
 **Branch**: `tech-debt/night-shift-20260415`
 **Duration**: 0h 2m
 **Summary**: 1 fixed · 0 blocked · 1 skipped
