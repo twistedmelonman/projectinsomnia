@@ -4,22 +4,23 @@ Tracking the `npm audit` state and the reasoning behind what is fixed versus
 accepted. Issue #123 asked for the residual risk to be a documented conclusion
 rather than an assumption, so this file records that.
 
-Last reviewed: 2026-09-05
+Last reviewed: 2026-09-10
 
 ## Current state
 
 `npm audit` reports **0 advisories**. The accepted baseline is empty.
-`toml` appeared as a new advisory on 2026-09-05 and was cleared the same
-day by an `overrides` bump. See "Re-triaged 2026-09-05" below. Before that,
+`sharp` appeared as a new advisory on 2026-09-09 and was cleared on
+2026-09-10 by an `overrides` bump. See "Re-triaged 2026-09-10" below.
+Before that, `toml` was cleared on 2026-09-05 by the same mechanism, and
 `image-size` and `extract-zip` were cleared on 2026-09-02 by the
-`@netlify/vite-plugin` override — see "Re-triaged 2026-09-02" below.
+`@netlify/vite-plugin` override — see the dated sections below.
 
 ## What was fixed
 
 | Package | Action | Result |
 | --- | --- | --- |
 | `@netlify/blobs` | bumped `^10.7.2` → `^11.0.1` | direct fix; cleared |
-| `sharp` | `overrides` → `^0.35.3` | advisory required `>=0.35.0`; cleared |
+| `sharp` | `overrides` → `^0.35.4` | libheif advisory required `>=0.35.4`; cleared |
 | `picomatch` | `overrides` → `^4.0.5` | ReDoS + method injection; cleared |
 | `nanoid` | `overrides` → `^5.1.6` | zero-size infinite loop; cleared |
 | `fast-uri` | `overrides` → `^3.1.6` | 4 SSRF/host-confusion; cleared |
@@ -30,6 +31,39 @@ day by an `overrides` bump. See "Re-triaged 2026-09-05" below. Before that,
 (`netlify/functions/instagram-{feed,image,webhook}.mts`) use `getStore`,
 `.get()`, `.set()`, and `.setJSON()`; all are present in v11 with compatible
 signatures, and the functions type-check clean against the v11 declarations.
+
+## Re-triaged 2026-09-10 — the `sharp` libheif advisory
+
+`sharp` appeared on 2026-09-09 as a new advisory outside the accepted
+baseline (empty), and `scripts/check-audit-baseline.sh` failed the build as
+designed. `build` was red on `main` from 2026-09-09 until this fix.
+
+| Advisory | Issue | Fixed in |
+| --- | --- | --- |
+| [GHSA-rgj7-g3m4-5g8c](https://github.com/advisories/GHSA-rgj7-g3m4-5g8c) | libheif vulnerabilities (GHSA-g89c-p67h-r497, GHSA-2jg2-4ch7-h545) | `>=0.35.4` |
+
+`npm audit` reported six advisories, but they are one root and five
+chain-only entries flagged solely for depending on it:
+
+```text
+@astrojs/netlify → @netlify/vite-plugin → @netlify/dev
+  → @netlify/images → ipx → sharp
+```
+
+The prior override pinned `^0.35.3`, which cleared the earlier advisory
+requiring `>=0.35.0`. The caret would have permitted 0.35.4, but the
+lockfile stayed resolved at 0.35.3, so the floor was raised to `^0.35.4`
+and the lockfile regenerated.
+
+**`npm audit fix --force` is the wrong tool here**, and proposes the same
+downgrade #123 documents: `@astrojs/netlify` 8.2.4 → 6.4.1, a semver-major
+rollback that reintroduces the Astro 5 content-collection API and re-breaks
+the site the way #120 fixed. It is also unnecessary, since a real patch
+exists one patch version up. Verified after this change that
+`@astrojs/netlify` remains at 8.2.4.
+
+Verified: `scripts/check-audit-baseline.sh` → passed, `npm audit` → 0
+vulnerabilities, `npm run build` → succeeds.
 
 ## The `toml` override
 
