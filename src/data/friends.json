@@ -3,56 +3,56 @@
     "name": "Rick Wilson",
     "site": "Against All Enemies",
     "url": "https://www.againstallenemies.net/",
-    "blurb": "Former Republican ad man, writing daily politics against the party he used to make commercials for."
+    "blurb": "He made Republican campaign ads for a living. He now writes daily politics against that party."
   },
   {
     "name": "Matt Kiser",
     "site": "What The Fuck Just Happened Today?",
     "url": "https://whatthefuckjusthappenedtoday.com/",
-    "blurb": "One post a day, seven numbered items, every one sourced. He has kept this up since 2017, which is the part I find hard to believe."
+    "blurb": "One post a day, seven numbered items, every one sourced. He has done it since 2017. I still find that hard to believe."
   },
   {
     "name": "Kylie Bodiya",
     "site": "The Quirky Mouse",
     "url": "https://thequirkymouse.com/",
-    "blurb": "Disney shirts and art prints built on deep cuts instead of character faces. She writes about running the business as openly as she designs for it."
+    "blurb": "Her Disney shirts and art prints go for deep cuts rather than character faces, and she writes about running the business as openly as she designs for it."
   },
   {
     "name": "Casey Newton",
     "site": "Platformer",
     "url": "https://www.platformer.news/",
-    "blurb": "AI and the social platforms. He left a big publication to report on them independently."
+    "blurb": "He left a big publication to report on AI and the social platforms independently."
   },
   {
     "name": "Matthew Haughey",
     "site": "A Whole Lotta Nothing",
     "url": "https://a.wholelottanothing.org/",
-    "blurb": "Projects, places, and useful obsessions — woodworking, bikes, home automation. He built MetaFilter, and has been posting here since 1999."
+    "blurb": "He built MetaFilter and has been posting here since 1999. Projects, places, and useful obsessions: woodworking, bikes, home automation."
   },
   {
     "name": "Mike Monteiro",
     "site": "Mike Monteiro's Good News",
     "url": "https://buttondown.com/monteiro",
-    "blurb": "A designer with strong opinions about what designers owe people. One reader question a week, and only if he thinks he can answer it well."
+    "blurb": "A designer with strong opinions about what designers owe people. He answers one reader question a week, and only when he thinks he can answer it well."
   },
   {
     "name": "Joanna Stern",
     "site": "The New Things",
     "url": "https://thenewthings.com/",
-    "blurb": "Consumer tech reviewed by someone who is funny about it. Foldables, doorbell cameras, whatever Apple just shipped."
+    "blurb": "Foldables, doorbell cameras, whatever Apple just shipped, and she is funny about all of it."
   },
   {
     "name": "Julia Evans",
     "site": "jvns.ca",
     "url": "https://jvns.ca",
-    "blurb": "Explains how computer things work, DNS and git and the shell, without pretending you already knew. Her Wizard Zines are the illustrated version.",
+    "blurb": "Explains how computer things work: DNS, git, the shell. She never assumes you already knew. Her Wizard Zines are the illustrated version.",
     "also": { "label": "Wizard Zines", "url": "https://wizardzines.com/" }
   },
   {
     "name": "Josh Barro and Ken White",
     "site": "Serious Trouble",
     "url": "https://www.serioustrouble.show/",
-    "blurb": "An irreverent podcast about the law, which mostly means a defense lawyer explaining why the case you read about is not the case you think it is."
+    "blurb": "An irreverent podcast about the law, in which a defense lawyer explains why the case you read about is not the case you think it is."
   },
   {
     "name": "Cassidy Williams",
@@ -64,31 +64,31 @@
     "name": "Georgia Dunn",
     "site": "Breaking Cat News",
     "url": "https://www.breakingcatnews.com",
-    "blurb": "A syndicated comic strip where the household cats are a news crew reporting on their own house. Based on her actual cats."
+    "blurb": "Her actual cats, reimagined as a news crew reporting on their own house. The strip is syndicated."
   },
   {
-    "name": "FueledbyLOLZ",
-    "site": "fueledbylolz.com",
+    "name": "Hollie Sick",
+    "site": "FueledbyLOLZ",
     "url": "https://fueledbylolz.com/",
-    "blurb": "Race recaps, shoe reviews, and diner reviews from a runner in California. Never signs a name to any of it."
+    "blurb": "She has run and laughed through the Golden State since 2010. Over 150 pairs of running shoes reviewed, a book about how to pick them, and the rest is race recaps and diner reviews."
   },
   {
     "name": "Dan Hon",
     "site": "Things That Caught My Attention",
     "url": "https://thingsthatcaughtmyattention.com/",
-    "blurb": "Technology, government, and design, tangled up with ADHD and fatherhood and being an immigrant here. Running since 2014 and past a million words."
+    "blurb": "Technology, government, and design, tangled up with ADHD and fatherhood and being an immigrant here. He started in 2014 and is past a million words."
   },
   {
     "name": "j.b. crawford",
     "site": "computers are bad",
     "url": "https://computer.rip/",
-    "blurb": "The history of the computer and telecom industry, with a fondness for its stranger bit players. He writes it to explain why computers are the way they are."
+    "blurb": "He writes the history of the computer and telecom industry to explain why computers are the way they are, and he is fond of its stranger bit players."
   },
   {
     "name": "Ana Marie Cox",
     "site": "anamariecox.com",
     "url": "https://anamariecox.com/",
-    "blurb": "Founded Wonkette, then spent two decades in political media. Now she writes about craft and runs workshops on it."
+    "blurb": "Founded Wonkette, spent two decades in political media, and now writes about craft and runs workshops on it."
   },
   {
     "name": "Patrick Wardle",
@@ -98,9 +98,9 @@
   },
   {
     "name": "Amelia Boone",
-    "site": "ameliaboone.com",
+    "site": "ameliabooneracing.com",
     "url": "https://ameliabooneracing.com",
-    "blurb": "Obstacle racing champion, ultrarunner, attorney. Writes about injury and recovery and aging with more candor than the genre usually allows. Night Owl Studio built this site."
+    "blurb": "Obstacle racing champion, ultrarunner, attorney. She writes about injury, recovery, and getting older with more candor than the genre usually allows. Night Owl Studio built this site."
   },
   {
     "name": "Patrick McKenzie",
