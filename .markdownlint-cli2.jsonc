@@ -1,0 +1,43 @@
+// Repo-local markdownlint config. run-standards.sh prefers this over the
+// canonical fleet config when it is present, so anything set here applies to
+// CI as well as local runs.
+//
+// IMPORTANT: a repo-local config REPLACES the canonical one rather than
+// extending it, so the `config` block below must mirror
+// github-workflows/standards/markdownlint.json. Without it this repo would
+// silently pick up rules the fleet has turned off (MD013 line-length being the
+// noisy one) and diverge from the standard in ways unrelated to the
+// grandfathering this file exists for. If the canonical config changes, this
+// block needs the same change.
+//
+// Why src/content is ignored:
+//
+// Those files are not hand-authored Markdown. They came from scraping old
+// Medium posts, converting to Markdown, and publishing through Astro. The
+// conversion left a uniform artifact -- 58 of the 60 findings in this repo were
+// MD001 (heading-increment) at line 9 of a content file, where the converter
+// emitted an h3 under an h1.
+//
+// Reflowing the headings of published posts to satisfy a linter would edit
+// historical writing to fix a machine-generated artifact, and would change the
+// rendered pages. The posts are archival: they are grandfathered, and the
+// standard is enforced going forward on everything outside src/content.
+//
+// This is deliberately a path-scoped ignore rather than disabling MD001
+// globally. A new MD001 in docs/ or in a README still fails.
+{
+  "ignores": ["src/content/**"],
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    },
+    "MD029": false,
+    "MD033": false,
+    "MD036": false,
+    "MD040": false,
+    "MD046": false,
+    "MD060": false
+  }
+}
