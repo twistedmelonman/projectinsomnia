@@ -30,12 +30,12 @@ master, which treats both as deliberate moves rather than tells:
 If something here contradicts the master, the master is right and this
 sheet needs an edit.
 
-**One standing exception: headlines.** The master's item 10 prescribes a
-two-sentence claim-then-turn title. The author rejected that style on
-2026-09-10 and asked for single-line NYT-style headlines instead. Until
-item 10 is corrected at the source, the Headlines section below wins
-over it. This is a later instruction from the same author, not the
-overlay outranking the master.
+**Headlines changed on both sides on 2026-09-10.** The master's item 10
+used to prescribe a two-sentence claim-then-turn title. The author
+rejected that style, and item 10 now carries the single-line NYT rule
+that the Headlines section below expands on. The two agree. If a copy of
+the master still shows the old two-sentence formula, that copy is stale
+and item 10 is what needs the edit.
 
 ## Where the voice actually is
 
@@ -265,10 +265,10 @@ This sheet has reversed on headlines twice. It first banned the
 two-sentence title, then restored it because the master voice guide's
 item 10 named that exact formula and the master wins on conflict. On
 2026-09-10 the author rejected the two-sentence style directly and asked
-for the NYT single-line rule, which supersedes item 10 at the source
-rather than through the overlay. A future session finding item 10 still
-in the master should treat this section as current and fix the master,
-not revert this.
+for the NYT single-line rule. Item 10 was rewritten to match on the same
+day, so the two documents now agree rather than the overlay carrying an
+exception. A future session finding the old formula anywhere should fix
+that copy, not revert this.
 
 Auditing and retitling the existing posts is tracked separately.
 
