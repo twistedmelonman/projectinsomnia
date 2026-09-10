@@ -219,18 +219,14 @@ symptom is X, the fix is Y, here's why" block, *then* the war story.
 ## Headlines
 
 **Write the title like a New York Times article headline.** One line. No
-terminal period. It says what the piece is about, in a way that draws
-interest without sounding excited about itself. The reader should be able
-to name the subject from the title alone, before reading a word of the
-post.
+periods. It says what the piece is about, in a way that draws interest
+without sounding excited about itself. The reader should be able to name
+the subject from the title alone, before reading a word of the post.
 
-That is the whole rule. It replaces the two-sentence claim-then-turn
-formula that this sheet and the master voice guide both prescribed until
-2026-09-10, when the author ruled it out by name. See History below —
-the sheet has flipped on this before, and the current direction is the
-one to keep.
+That is the whole rule, and it is new as of 2026-09-10; see History
+below.
 
-Titles already on the blog that meet the rule:
+Titles already on the blog that meet it:
 
 - "Unlocking the Login Keychain Over SSH on a Headless Mac" — the SEO
   how-to case. Keyword-carrying and undressed. This is the model for
@@ -238,8 +234,8 @@ Titles already on the blog that meet the rule:
 - "An Incomplete List of Everything 'Reset All Settings' Actually Resets"
   — interest comes from the specific, slightly absurd subject, not from
   a rhetorical move.
-- "Hallway" and "Five Races" — the essay case. A short noun phrase
-  earns the reader's attention when the piece is personal.
+- "Building a Website for Someone Who Actually Uses It" — the essay
+  case. Warmer than a news headline and still names its subject.
 
 Not this:
 
@@ -290,7 +286,7 @@ structure, and the two personal flagged words.
   One or two is fine and often better. Every list in the post built that
   way is the tell.
 - [ ] **Headline is one NYT-style line.** One sentence or noun phrase,
-  no terminal period, no second sentence, no question mark, no
+  no periods, no second sentence, no question mark, no
   exclamation point. A stranger can name the subject from the title
   alone. Nothing in it is trying to sound excited.
 - [ ] **Italics audit.** Italics for *emphasis-by-parallelism* — cut.
