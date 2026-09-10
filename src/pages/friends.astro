@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import friends from '../data/friends.json';
+---
+
+<BaseLayout title="Friends" description="A blogroll: the writers whose work lands in Andrew Rich's inbox most often.">
+
+  <h1>Friends</h1>
+
+  <p class="focus">A blogroll, in the old sense. I built this list by counting
+  which newsletters actually show up in my inbox, which is a decent proxy for
+  whose thinking I keep choosing. Some of these people I know. The rest have no
+  idea who I am. Inspired by
+  <a href="https://slashfriends.org/about">slashfriends.org</a>.</p>
+
+  <ul class="friends-list">
+    {friends.map((friend) => (
+      <li class="friend">
+        <h2>
+          <a href={friend.url}>{friend.name}</a>
+          <span class="friend-site">{friend.site}</span>
+        </h2>
+        <p>{friend.blurb}</p>
+        {friend.also && (
+          <p class="friend-also">Also: <a href={friend.also.url}>{friend.also.label}</a></p>
+        )}
+      </li>
+    ))}
+  </ul>
+
+</BaseLayout>
+
+<style>
+  .focus {
+    color: var(--color-muted);
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1rem;
+    margin: 0 0 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .friends-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .friend {
+    margin-bottom: 2rem;
+  }
+
+  .friend h2 {
+    margin: 0 0 0.3rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    border-bottom: none;
+    padding-bottom: 0;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  .friend-site {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: var(--color-muted);
+  }
+
+  .friend p {
+    margin: 0;
+    color: var(--color-muted);
+    line-height: 1.5;
+  }
+
+  .friend-also {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+</style>

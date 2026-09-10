@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Rick Wilson",
+    "site": "Against All Enemies",
+    "url": "https://www.againstallenemies.net/",
+    "blurb": "Former Republican ad man, writing daily politics against the party he used to make commercials for."
+  },
+  {
+    "name": "Matt Kiser",
+    "site": "What The Fuck Just Happened Today?",
+    "url": "https://whatthefuckjusthappenedtoday.com/",
+    "blurb": "One post a day, seven numbered items, every one sourced. He has kept this up since 2017, which is the part I find hard to believe."
+  },
+  {
+    "name": "Kylie Bodiya",
+    "site": "The Quirky Mouse",
+    "url": "https://thequirkymouse.com/",
+    "blurb": "Disney shirts and art prints built on deep cuts instead of character faces. She writes about running the business as openly as she designs for it."
+  },
+  {
+    "name": "Casey Newton",
+    "site": "Platformer",
+    "url": "https://www.platformer.news/",
+    "blurb": "AI and the social platforms. He left a big publication to report on them independently."
+  },
+  {
+    "name": "Matthew Haughey",
+    "site": "A Whole Lotta Nothing",
+    "url": "https://a.wholelottanothing.org/",
+    "blurb": "Projects, places, and useful obsessions — woodworking, bikes, home automation. He built MetaFilter, and has been posting here since 1999."
+  },
+  {
+    "name": "Mike Monteiro",
+    "site": "Mike Monteiro's Good News",
+    "url": "https://buttondown.com/monteiro",
+    "blurb": "A designer with strong opinions about what designers owe people. One reader question a week, and only if he thinks he can answer it well."
+  },
+  {
+    "name": "Joanna Stern",
+    "site": "The New Things",
+    "url": "https://thenewthings.com/",
+    "blurb": "Consumer tech reviewed by someone who is funny about it. Foldables, doorbell cameras, whatever Apple just shipped."
+  },
+  {
+    "name": "Julia Evans",
+    "site": "jvns.ca",
+    "url": "https://jvns.ca",
+    "blurb": "Explains how computer things work, DNS and git and the shell, without pretending you already knew. Her Wizard Zines are the illustrated version.",
+    "also": { "label": "Wizard Zines", "url": "https://wizardzines.com/" }
+  },
+  {
+    "name": "Josh Barro and Ken White",
+    "site": "Serious Trouble",
+    "url": "https://www.serioustrouble.show/",
+    "blurb": "An irreverent podcast about the law, which mostly means a defense lawyer explaining why the case you read about is not the case you think it is."
+  },
+  {
+    "name": "Cassidy Williams",
+    "site": "cassidoo.co",
+    "url": "https://cassidoo.co/",
+    "blurb": "Developer advocacy at GitHub, plus a weekly newsletter with an interview question in it. A lot of the memes in my feed start here."
+  },
+  {
+    "name": "Georgia Dunn",
+    "site": "Breaking Cat News",
+    "url": "https://www.breakingcatnews.com",
+    "blurb": "A syndicated comic strip where the household cats are a news crew reporting on their own house. Based on her actual cats."
+  },
+  {
+    "name": "FueledbyLOLZ",
+    "site": "fueledbylolz.com",
+    "url": "https://fueledbylolz.com/",
+    "blurb": "Race recaps, shoe reviews, and diner reviews from a runner in California. Never signs a name to any of it."
+  },
+  {
+    "name": "Dan Hon",
+    "site": "Things That Caught My Attention",
+    "url": "https://thingsthatcaughtmyattention.com/",
+    "blurb": "Technology, government, and design, tangled up with ADHD and fatherhood and being an immigrant here. Running since 2014 and past a million words."
+  },
+  {
+    "name": "j.b. crawford",
+    "site": "computers are bad",
+    "url": "https://computer.rip/",
+    "blurb": "The history of the computer and telecom industry, with a fondness for its stranger bit players. He writes it to explain why computers are the way they are."
+  },
+  {
+    "name": "Ana Marie Cox",
+    "site": "anamariecox.com",
+    "url": "https://anamariecox.com/",
+    "blurb": "Founded Wonkette, then spent two decades in political media. Now she writes about craft and runs workshops on it."
+  },
+  {
+    "name": "Patrick Wardle",
+    "site": "Objective-See",
+    "url": "https://objective-see.org/",
+    "blurb": "Free, open-source Mac security tools, plus malware analysis written up in detail. If you run a Mac, install a few of these."
+  },
+  {
+    "name": "Amelia Boone",
+    "site": "ameliaboone.com",
+    "url": "https://ameliabooneracing.com",
+    "blurb": "Obstacle racing champion, ultrarunner, attorney. Writes about injury and recovery and aging with more candor than the genre usually allows. Night Owl Studio built this site."
+  },
+  {
+    "name": "Patrick McKenzie",
+    "site": "Bits about Money",
+    "url": "https://www.bitsaboutmoney.com/",
+    "blurb": "Monthly essays on how financial infrastructure works underneath the app: card networks, fraud, the plumbing nobody explains."
+  }
+]
