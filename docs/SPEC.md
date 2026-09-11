@@ -3,7 +3,7 @@
 **For**: Claude Code (CLI) handoff  
 **Last updated**: March 13, 2026  
 **Live preview**: <https://projectinsomnia.netlify.app/>  
-**Repo**: <https://github.com/smartwatermelon/projectinsomnia> (private)  
+**Repo**: <https://github.com/twistedmelonman/projectinsomnia> (public)  
 **Local path**: ~/Developer/netlify/projectinsomnia
 
 ---
@@ -139,7 +139,7 @@ excluded). Autodiscovery `<link>` tag present in BaseLayout head.
 
 ### About page
 
-Complete. Includes: bio, He/Him, Spokane WA, links to GitHub (`smartwatermelon`),
+Complete. Includes: bio, He/Him, Spokane WA, links to GitHub (`twistedmelonman`),
 Strava, Instagram, LinkedIn, Medium (archived). Night Owl Studio mention. Two
 contact addresses. "Some things are worth keeping" note on domain history.
 
@@ -156,7 +156,7 @@ Reliquarist (coming soon), Crazy Larry's Used Spaceships, freelance CTA.
 
 **Right column — GitHub repos, grouped:**
 
-- AI & Claude Code: claude-wrapper, claude-config, ralph-burndown, slack-mcp,
+- AI & Claude Code: claude-wrapper, claude-config, slack-mcp,
   smartwatermelon-marketplace, nightowlstudiollc/networth-agent
 - Fleet & CI Tooling: github-workflows, dev-env, homebrew-tap
 - macOS & Infrastructure: mac-dev-server-setup, mac-server-setup,

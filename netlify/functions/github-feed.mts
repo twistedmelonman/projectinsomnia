@@ -1,7 +1,10 @@
 import type { Config } from "@netlify/functions";
 import Parser from "rss-parser";
 
-const GITHUB_USERNAME = "smartwatermelon";
+// The personal account, not the `smartwatermelon` org. The org's feed
+// carries only membership administration ("added X to repo Y"), while the
+// coding activity this page is meant to show happens under this account.
+const GITHUB_USERNAME = "twistedmelonman";
 const MAX_ITEMS = 10;
 
 export default async function handler(): Promise<Response> {
