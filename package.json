@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.8",
-    "@astrojs/netlify": "^8.2.4",
+    "@astrojs/netlify": "^8.2.5",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
-    "@netlify/blobs": "^11.0.2",
-    "astro": "^7.2.9",
-    "astro-expressive-code": "^0.44.1",
+    "@astrojs/sitemap": "^3.7.4",
+    "@netlify/blobs": "^11.0.3",
+    "astro": "^7.3.2",
+    "astro-expressive-code": "^0.44.2",
     "rss-parser": "^3.13.0"
   },
   "overrides": {
